@@ -24,11 +24,11 @@ const aboutPage = () => (
 
     <div style={{ display: "flex", flexDirection: "row", marginBottom: "2rem" }}>
       <div className="infographic" style={{ maxWidth: `445px` }}>
-        <img src={google} alt="google revenue"></img>
+        <a href="https://www.fool.com/investing/general/2015/06/14/how-does-google-make-money-ads-ads-ads.aspx"> <img src={google} alt="google revenue"></img></a>
       </div>
       <span style={{ flex: "1 1 auto" }}> </span>
       <div className="infographic" style={{ maxWidth: '445px' }}>
-        <img src={facebook} alt="facebook revenue"></img>
+        <a href="https://www.investopedia.com/tech/how-much-can-facebook-potentially-make-selling-your-data"> <img src={facebook} alt="facebook revenue"></img> </a>
       </div>
     </div>
 
@@ -38,14 +38,14 @@ const aboutPage = () => (
 
     <div style={{ display: "flex", flexDirection: "row", marginBottom: "1.45rem", flexWrap: "wrap" }}>
     <div className="headline">
-    <img src={reuters} alt="reuters"></img>
+    <a href="https://www.reuters.com/article/us-facebook-cambridge-analytica-regulati-idUSKCN1GU01A"> <img src={reuters} alt="reuters"></img> </a>
     </div>
     <div className="headline">
-    <img src={venture} alt="venture"></img>
+    <a href="https://venturebeat.com/2019/02/24/were-giving-away-more-personal-data-than-ever-despite-growing-risks/">  <img src={venture} alt="venture"></img> </a>
     </div>
 
     <div className="headline">
-    <img src={verge} alt="verge"></img>
+    <a href="https://www.theverge.com/2013/12/6/5181472/brightest-flashlight-free-ftc-location-data-settlement"> <img src={verge} alt="verge"></img> </a>
     </div>
     </div>
 
