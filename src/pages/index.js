@@ -1,21 +1,59 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+
+import Particles from 'react-particles-js';
+
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+    <SEO title="Home" keywords={[`janus`, `application`, `react`]} />
+            
+            <div style={{ 
+              top: 0, 
+              left: 0, 
+              right: 0, 
+              position: "absolute", 
+              pointerEvents: "none" }}>
+
+            <Particles 
+
+            height="100vh"
+            width="100vw"
+            
+            params={{
+              "particles": {
+                "color": {
+                  "value": "random"
+                },
+                "opacity": {
+                  "value": .5
+                },
+                "number": {
+                  "value": 75
+                },
+                "size": {
+                  "value": 4
+                },
+                "line_linked": {
+                  "enable": true,
+                  "distance": 150,
+                  "color": "#000000",
+                  "opacity": 0.2,
+                  "width": 1
+                }
+              } 
+            }}/> 
+
+            </div>
+    
+    <div style={{ marginTop: "25vh" }}>
+      <h1 style={{ fontSize: "2.75rem" }}>Welcome to the new age of privacy.</h1>
+      <p style={{ fontSize: "1.15rem" }}>Your data. Your choice. </p>
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
+
   </Layout>
 )
-
-export default IndexPage
+   
+export default IndexPage;

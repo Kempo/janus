@@ -1,0 +1,8 @@
+.nav-link {
+    text-decoration: none;
+    color: black;
+    padding-right: 30px;
+    font-family: Helvetica Neue;
+    letter-spacing: 1px;
+    font-weight: 200;
+}
